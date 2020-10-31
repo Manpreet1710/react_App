@@ -1,13 +1,44 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Muli;
+  src: url(../src/muli.regular.ttf);
+}
+body {
+  font-family: Muli !important;
+}
+.bg {
+  width: 100%;
+  height: 90vh;
+  background: url(../src/Images/5.jpg) no-repeat 100%;
+  background-size: cover;
+}
+.navbar-brand {
+  font-weight: 500;
+  font-size: 1.5rem !important;
+}
+.nav-link {
+  padding-bottom: 0 !important;
+  color: #000 !important;
+}
+.active_class {
+  font-weight: 600;
+  border-bottom: 2px solid deepskyblue;
+}
+.flex__ {
+  height: 60vh;
+  display: inline-flex;
+  align-items: center;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 25px;
 }
